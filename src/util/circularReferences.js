@@ -1,22 +1,3 @@
-/**
- * Finds circular references in an object.
- * @param {Object} objeto - The object to search for circular references.
- * @param {Set} [stack=new Set()] - The stack of objects to check for circular references.
- * @returns {Array} - An array of circular reference properties.
- * @example
- * // Ejemplo de uso
-    const objeto = {
-      a: { b: { c: null } },
-      x: null,
-      y: { z: null },
-    };
-
-objeto.a.b.c = objeto;
-objeto.y.z = objeto;
-
-const propiedadesCirculares = findCircularReferences(objeto);
-console.log(propiedadesCirculares); // ["a.b.c", "y.z"]
- */
 export function findCircularReferences(objeto, stack = new Set()) {
   if (typeof objeto !== 'object' || objeto === null) {
     return [];
@@ -43,6 +24,7 @@ export function findCircularReferences(objeto, stack = new Set()) {
 
   return circularProps;
 }
+
 
 /**
  * Recursively removes circular references from an object.
