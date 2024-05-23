@@ -1,4 +1,4 @@
-export const omit = (keys, obj) => {
+export const omit = ( obj, keys) => {
   // Crea una copia superficial del objeto original
   const newObj = { ...obj };
   
@@ -9,3 +9,5 @@ export const omit = (keys, obj) => {
   
   return newObj;
 }
+
+export default omit;

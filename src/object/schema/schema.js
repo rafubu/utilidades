@@ -1,5 +1,5 @@
 // schema.ts
-class JsonSchemaBuilder {
+export class JsonSchemaBuilder {
   schema;
   constructor(type) {
     this.schema = { type };
@@ -54,6 +54,4 @@ class JsonSchemaBuilder {
     return this.schema;
   }
 }
-export {
-  JsonSchemaBuilder
-};
+export default JsonSchemaBuilder;

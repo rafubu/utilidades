@@ -5,7 +5,7 @@
  * @returns A new promise that resolves or rejects based on the original promise and the time limit.
  * @throws An error if the promise is undefined or the time limit is less than or equal to 0.
  */
-export const esperarPromesaConTimeout = (promesa:Promise<any>, tiempoLimite:number = 5000 ) => {
+export default (promesa:Promise<any>, tiempoLimite:number = 5000 ) => {
   if (promesa === undefined) {
     return Promise.reject(new Error('La promesa no puede ser undefined'));
   }
