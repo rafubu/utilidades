@@ -9,3 +9,9 @@ export const deleteCircularReference = await import('./src/util/circularReferenc
 export const omitirPropiedades = await import('./src/object/omit.js').then(mod => mod.default);
 export const Log = await import('./src/util/Log.js').then(mod => mod.default);
 export const JSONSchema = await import('./src/object/schema/schema.js').then(mod => mod.default)
+export const uuidV1_ASC = await import('./src/object/uuid.js').then(mod => mod.v1_ASC)
+export const uuidV1_DESC = await import('./src/object/uuid.js').then(mod => mod.v1_DESC)
+export const uuidSort = await import('./src/object/uuid.js').then(mod => mod.sortUUIDs)
+export const uuidSortInverse = await import('./src/object/uuid.js').then(mod => mod.sortUUIDsInverse)
+export const uuidV1 = await import('./src/object/uuid.js').then(mod => mod.v1)
+export const uuidV4 = await import('./src/object/uuid.js').then(mod => mod.v4)
