@@ -15,3 +15,6 @@ export const uuidSort = await import('./src/object/uuid.js').then(mod => mod.sor
 export const uuidSortInverse = await import('./src/object/uuid.js').then(mod => mod.sortUUIDsInverse)
 export const uuidV1 = await import('./src/object/uuid.js').then(mod => mod.v1)
 export const uuidV4 = await import('./src/object/uuid.js').then(mod => mod.v4)
+export const qs = await import('./src/url/index.ts').then(mod => mod.qs)
+export const parseQueryString = await import('./src/url/index.ts').then(mod => mod.parseQueryString)
+export const objectToQueryString = await import('./src/url/index.ts').then(mod => mod.objectToQueryString)
